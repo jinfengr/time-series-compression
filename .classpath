@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+  <classpathentry kind="src" path="src/test/java" output="target/test-classes" including="**/*.java"/>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/4.8.2/junit-4.8.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"/>
+  <classpathentry kind="var" path="M2_REPO/trove/trove/1.0.2/trove-1.0.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.1/commons-io-2.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-core/4.8.0/lucene-core-4.8.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/google/guava/guava/17.0/guava-17.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/me/lemire/integercompression/JavaFastPFOR/0.0.3/JavaFastPFOR-0.0.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/de/matrixweb/smaller/ant-standalone/0.8.3/ant-standalone-0.8.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/de/matrixweb/smaller-config/smaller-config/0.2.2/smaller-config-0.2.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.3.1/jackson-databind-2.3.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.3.0/jackson-annotations-2.3.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.3.1/jackson-core-2.3.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/yaml/snakeyaml/1.13/snakeyaml-1.13.jar"/>
+  <classpathentry kind="var" path="M2_REPO/it/unimi/dsi/fastutil/6.5.15/fastutil-6.5.15.jar"/>
+</classpath>
