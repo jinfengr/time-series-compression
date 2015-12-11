@@ -1,4 +1,4 @@
-# ecir-compression
+# time-series-compression
 This repository is open-source implementation for our ECIR'16 paper: Compressing and Decoding Term Statistics Time Series [1].
 
 Data Format
@@ -55,7 +55,7 @@ The first input argument is the input bigram counts file, the second and third a
 
 ``3.2`` Then you can compare the performance of different compression algorithms(i.e, Variable Byte encoding, PForDelta, Simple16) on the bigram counts data. Similarly, this step can be skiped if you don't care the performance comparison.
 ```
-$ sh target/appassembler/bin/bigramComparison data/unigram_counts.txt bigram-huffmantree.txt unigram_compressed_counts.txt unigram-huffmantree.txt
+$ sh target/appassembler/bin/bigramComparison data/bigram_counts.txt bigram-huffmantree.txt unigram_compressed_counts.txt unigram-huffmantree.txt
 ``` 
 Similarly, this commmand should print some log showing the compression size(Bytes) and the average decoding time(us) for each compression algorithm. 
 
