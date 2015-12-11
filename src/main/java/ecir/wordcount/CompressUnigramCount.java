@@ -38,7 +38,7 @@ public class CompressUnigramCount {
 	public static void CompressCounts(String filePath) throws IOException {
 		System.out.println("Processing "+filePath);
 		BufferedReader bf = new BufferedReader(new FileReader(filePath));
-		String line;
+		String line = bf.readLine(); // read first line;
 		while((line=bf.readLine())!=null){
 			String[] groups = line.split(",");
 			String word = groups[0];

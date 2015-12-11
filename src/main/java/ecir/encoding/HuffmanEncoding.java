@@ -62,8 +62,8 @@ public class HuffmanEncoding {
 		StringBuilder unitStr = new StringBuilder();
 		for(int i = 0; i < codeStr.length(); i++){
 			unitStr.append(codeStr.charAt(i));
-			if(huffmanCodesReverse.containsKey(unitStr)){
-				Unit u = huffmanCodesReverse.get(unitStr);
+			if(huffmanCodesReverse.containsKey(unitStr.toString())){
+				Unit u = huffmanCodesReverse.get(unitStr.toString());
 				for(int element: u.data){
 					origData.add(element);
 				}

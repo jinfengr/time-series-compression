@@ -11,8 +11,9 @@ public class GenrateSampleData {
 		String[] unigrams = {"a", "b", "c", "d"};
 		String[] bigrams = {"a b", "a c", "a d", "b c", "b d", "c d"};
 		int days = 50;
-		int size = 288;
+		int size = 408;
 		BufferedWriter bw = new BufferedWriter(new FileWriter("data/unigram_counts.txt"));
+		bw.write(days*unigrams.length+","+size+"\n");
 		for (String unigram : unigrams) {
 			for (int day = 1; day <= days; day++) {
 				bw.write(unigram+","+day+",");
@@ -25,6 +26,7 @@ public class GenrateSampleData {
 		}
 		bw.close();
 		bw = new BufferedWriter(new FileWriter("data/bigram_counts.txt"));
+		bw.write(days*bigrams.length+","+size+"\n");
 		for (String bigram : bigrams) {
 			for (int day = 1; day <= days; day++) {
 				bw.write(bigram+","+day+",");

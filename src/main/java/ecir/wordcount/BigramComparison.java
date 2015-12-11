@@ -57,7 +57,7 @@ public class BigramComparison {
 	public static void LoadBigramCounts(String filePath) throws IOException {
 		System.out.println("Processing "+filePath);
 		BufferedReader bf = new BufferedReader(new FileReader(filePath));
-		String line;
+		String line = bf.readLine(); // read first line;
 		byte[] bitVector1, bitVector2, intersectBitVector;
 		
 		while((line=bf.readLine())!=null){

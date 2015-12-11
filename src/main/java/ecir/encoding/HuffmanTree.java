@@ -149,11 +149,13 @@ public class HuffmanTree implements Comparable<HuffmanTree> {
 		if (left == null && right == null)
 			curmappings.put(value, currentcode);
 		
-		if (left != null)
+		if (left != null) {
 			left.traverse(currentcode + "1", curmappings);
+		}
 
-		if (right != null)
+		if (right != null) {
 			right.traverse(currentcode + "0", curmappings);
+		}
 	}
 
 	/** Compares by frequency. */

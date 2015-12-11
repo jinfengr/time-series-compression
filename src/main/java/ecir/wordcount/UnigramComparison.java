@@ -35,7 +35,7 @@ public class UnigramComparison {
 	public static void CompressCounts(String filePath) throws IOException {
 		System.out.println("Processing "+filePath);
 		BufferedReader bf = new BufferedReader(new FileReader(filePath));
-		String line;
+		String line = bf.readLine(); // read first line;
 		while((line=bf.readLine())!=null){
 			String[] groups = line.split(",");
 			String word = groups[0]; 
@@ -50,8 +50,8 @@ public class UnigramComparison {
 	
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		String wordCountPath = args[0];
-		String huffmanTreePath = args[1];
+		String wordCountPath = "data/unigram_counts.txt";
+		String huffmanTreePath = "unigram-huffmantree.txt";
 		huffmanTree = HuffmanEncoding.loadHuffmanTree(huffmanTreePath);
 		CompressionEnsemble.init(huffmanTree);
 		CompressCounts(wordCountPath);
