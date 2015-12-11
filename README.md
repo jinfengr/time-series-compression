@@ -4,6 +4,7 @@ This repository is open-source implementation for our ECIR'16 paper: Compressing
 Data Format
 -----------
 First, the input word count file should follow certain format: 
+
 rows, columns
 
 word1, day1, count, count, ..., count, 
