@@ -4,6 +4,7 @@ This repository is open-source implementation for our ECIR'16 paper: Compressing
 Data Format
 -----------
 First, the input word count file should follow certain format: 
+rows, columns
 
 word1, day1, count, count, ..., count, 
 
@@ -11,17 +12,17 @@ word1, day2, count, count, ..., count,
 
 word2, day1, count, count, ..., count, 
 
-The word count input file contains multiple words, and each word can have multiple days of counts. Each row represents the word counts for one word in one way. The number of word counts per day is unlimited. Consistent to our paper, we have two word count input files: one for unigram and the other for bigram. For example, check data/unigram_counts.txt and data/bigram_counts.txt respectively.
+The first line denotes how many rows and columns in the word count file. The word count input file contains multiple words, and each word can have multiple days of counts. Each row represents the word counts for one word in one way. The number of word counts per day is unlimited. Consistent to our paper, we have two word count input files: one for unigram and the other for bigram. For example, check data/unigram_counts.txt and data/bigram_counts.txt respectively.
 
 1. Getting Started
 ---------------
 First, checkout our repo:
 ```
-$ git clone git://github.com/Jeffyrao/ecir-compression.git
+$ git clone https://github.com/Jeffyrao/time-series-compression.git
 ``` 
 Then, build the package with Maven:
 ```
-$ cd ecir-compression
+$ cd time-series-compression
 $ mvn clean package appassembler:assemble
 ``` 
 
